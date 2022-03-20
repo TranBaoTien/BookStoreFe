@@ -13,7 +13,7 @@ function Menubar(){
 
 useEffect(()=>{
 async function fetchPostList(){
-  const requestUrl='https://nhom6-backend-nodejs.herokuapp.com/api/get-all-books';
+  const requestUrl='http://localhost:3001/api/get-all-books';
   const respone = await fetch(requestUrl);
   const responeJSON=await respone.json();
   console.log({responeJSON});
